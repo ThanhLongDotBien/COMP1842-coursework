@@ -1,0 +1,27 @@
+### Create (POST)
+POST http://localhost:3000/api/entries
+Content-Type: application/json
+
+{
+  "issueCode": "PWR_02",
+  "response": "you should reset by email or security question",
+  "category": "Password"
+}
+
+### Read (GET) 
+GET http://localhost:3000/api/entries
+
+### Read by ID
+GET http://localhost:3000/api/entries/643f1a2b1234567890abcd12
+
+### Update (PUT) customer
+PUT http://localhost:3000/api/entries/643f1a2b1234567890abcd12
+Content-Type: application/json
+
+{
+  "name": "Cuong Updated",
+  "age": 26
+}
+
+### Delete customer
+DELETE http://localhost:3000/api/entries/643f1a2b1234567890abcd12
