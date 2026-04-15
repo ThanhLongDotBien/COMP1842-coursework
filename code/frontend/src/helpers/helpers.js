@@ -1,16 +1,26 @@
 import axios from 'axios'
 
-const baseURL = 'http://localhost:3000/entries/'
-
-const handleError = fn => (...params) =>
-  fn(...params).catch(error => {
-    console.log(error)
-  })
+const BASE = 'http://localhost:3000/api'
 
 export const api = {
-  getEntry:    handleError(async id      => { const res = await axios.get(baseURL + id);           return res.data }),
-  getEntries:  handleError(async ()     => { const res = await axios.get(baseURL);                return res.data }),
-  deleteEntry: handleError(async id     => { const res = await axios.delete(baseURL + id);         return res.data }),
-  createEntry: handleError(async payload=> { const res = await axios.post(baseURL, payload);       return res.data }),
-  updateEntry: handleError(async payload=> { const res = await axios.put(baseURL + payload._id, payload); return res.data }),
+  getAllEntries: async () => {
+    const res = await axios.get(`${BASE}/entries`)
+    return res.data
+  },
+  getEntry: async (id) => {
+    const res = await axios.get(`${BASE}/entries/${id}`)
+    return res.data
+  },
+  createEntry: async (data) => {
+    const res = await axios.post(`${BASE}/entries`, data)
+    return res.data
+  },
+  updateEntry: async (data) => {
+    const res = await axios.put(`${BASE}/entries/${data._id}`, data)
+    return res.data
+  },
+  deleteEntry: async (id) => {
+    const res = await axios.delete(`${BASE}/entries/${id}`)
+    return res.data
+  },
 }

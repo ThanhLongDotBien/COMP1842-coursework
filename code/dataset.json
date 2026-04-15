@@ -1,0 +1,252 @@
+[
+  {
+    "issueCode": "HD001",
+    "responseText": "Please restart your device and try logging in again. If the issue continues, clear your browser cache and cookies before retrying.",
+    "category": "Login"
+  },
+  {
+    "issueCode": "HD002",
+    "responseText": "Your password reset request has been received. Please check your email inbox and spam folder for the reset link.",
+    "category": "Login"
+  },
+  {
+    "issueCode": "HD003",
+    "responseText": "Your account has been temporarily locked after multiple failed login attempts. Please wait 15 minutes before trying again.",
+    "category": "Login"
+  },
+  {
+    "issueCode": "HD004",
+    "responseText": "We could not verify your login credentials. Please make sure your email and password are entered correctly.",
+    "category": "Login"
+  },
+  {
+    "issueCode": "HD005",
+    "responseText": "Two-factor authentication code is invalid or expired. Please request a new code and try again.",
+    "category": "Login"
+  },
+  {
+    "issueCode": "HD006",
+    "responseText": "Your registration could not be completed because this email address is already in use. Please sign in or use a different email.",
+    "category": "Registration"
+  },
+  {
+    "issueCode": "HD007",
+    "responseText": "Your registration has been submitted successfully. Please verify your email address to activate your account.",
+    "category": "Registration"
+  },
+  {
+    "issueCode": "HD008",
+    "responseText": "The verification link has expired. Please request a new email verification link from the sign-in page.",
+    "category": "Registration"
+  },
+  {
+    "issueCode": "HD009",
+    "responseText": "We were unable to create your account due to missing required information. Please review the form and try again.",
+    "category": "Registration"
+  },
+  {
+    "issueCode": "HD010",
+    "responseText": "Your email address has not been verified yet. Please complete verification before signing in.",
+    "category": "Registration"
+  },
+  {
+    "issueCode": "HD011",
+    "responseText": "The page is loading slowly due to network conditions. Please refresh the page or try again later.",
+    "category": "Performance"
+  },
+  {
+    "issueCode": "HD012",
+    "responseText": "We are currently experiencing high server traffic. Some features may respond more slowly than usual.",
+    "category": "Performance"
+  },
+  {
+    "issueCode": "HD013",
+    "responseText": "The application timed out while processing your request. Please submit the action again.",
+    "category": "Performance"
+  },
+  {
+    "issueCode": "HD014",
+    "responseText": "Your browser may be affecting system performance. Please update your browser to the latest version.",
+    "category": "Performance"
+  },
+  {
+    "issueCode": "HD015",
+    "responseText": "Large file uploads may take longer to process. Please wait until the upload is fully completed before leaving the page.",
+    "category": "Performance"
+  },
+  {
+    "issueCode": "HD016",
+    "responseText": "We could not save your changes at this time. Please refresh the page and try again.",
+    "category": "System"
+  },
+  {
+    "issueCode": "HD017",
+    "responseText": "A temporary system error has occurred. Our team has been notified and is investigating the issue.",
+    "category": "System"
+  },
+  {
+    "issueCode": "HD018",
+    "responseText": "This feature is currently unavailable due to scheduled maintenance. Please try again later.",
+    "category": "System"
+  },
+  {
+    "issueCode": "HD019",
+    "responseText": "The requested resource could not be found. Please check the URL or navigate back to the dashboard.",
+    "category": "System"
+  },
+  {
+    "issueCode": "HD020",
+    "responseText": "The system encountered an unexpected error while processing your request. Please try again later.",
+    "category": "System"
+  },
+  {
+    "issueCode": "HD021",
+    "responseText": "Your payment could not be processed. Please confirm your payment details and try again.",
+    "category": "Billing"
+  },
+  {
+    "issueCode": "HD022",
+    "responseText": "We were unable to generate your invoice at this time. Please try again later or contact support.",
+    "category": "Billing"
+  },
+  {
+    "issueCode": "HD023",
+    "responseText": "The subscription renewal failed because the payment method was declined. Please update your billing information.",
+    "category": "Billing"
+  },
+  {
+    "issueCode": "HD024",
+    "responseText": "A duplicate billing attempt was detected. We recommend checking your transaction history before retrying payment.",
+    "category": "Billing"
+  },
+  {
+    "issueCode": "HD025",
+    "responseText": "Your refund request has been submitted successfully. Processing times may vary depending on your payment provider.",
+    "category": "Billing"
+  },
+  {
+    "issueCode": "HD026",
+    "responseText": "You do not currently have permission to access this page. Please contact your administrator for assistance.",
+    "category": "Access"
+  },
+  {
+    "issueCode": "HD027",
+    "responseText": "Your session has expired for security reasons. Please sign in again to continue.",
+    "category": "Access"
+  },
+  {
+    "issueCode": "HD028",
+    "responseText": "This action is restricted to admin users only. Please log in with an authorized account.",
+    "category": "Access"
+  },
+  {
+    "issueCode": "HD029",
+    "responseText": "Your role permissions do not allow this operation. Please request the required access level from your administrator.",
+    "category": "Access"
+  },
+  {
+    "issueCode": "HD030",
+    "responseText": "We were unable to validate your access token. Please sign out and sign in again.",
+    "category": "Access"
+  },
+  {
+    "issueCode": "HD031",
+    "responseText": "The uploaded file format is not supported. Please upload a file in the accepted format.",
+    "category": "Files"
+  },
+  {
+    "issueCode": "HD032",
+    "responseText": "Your file exceeds the maximum upload size. Please reduce the file size and try again.",
+    "category": "Files"
+  },
+  {
+    "issueCode": "HD033",
+    "responseText": "The file upload was interrupted. Please check your internet connection and try again.",
+    "category": "Files"
+  },
+  {
+    "issueCode": "HD034",
+    "responseText": "We could not download the requested file. Please refresh the page and try again.",
+    "category": "Files"
+  },
+  {
+    "issueCode": "HD035",
+    "responseText": "The file appears to be corrupted or incomplete. Please upload a new copy of the document.",
+    "category": "Files"
+  },
+  {
+    "issueCode": "HD036",
+    "responseText": "The search returned no matching results. Please try different keywords or filters.",
+    "category": "Search"
+  },
+  {
+    "issueCode": "HD037",
+    "responseText": "The search service is temporarily unavailable. Please try again in a few moments.",
+    "category": "Search"
+  },
+  {
+    "issueCode": "HD038",
+    "responseText": "Search results may be incomplete due to an indexing delay. Please try again later.",
+    "category": "Search"
+  },
+  {
+    "issueCode": "HD039",
+    "responseText": "Your filter selection returned no records. Please clear the filters and search again.",
+    "category": "Search"
+  },
+  {
+    "issueCode": "HD040",
+    "responseText": "Advanced search options are not available for your current plan. Please contact support for more details.",
+    "category": "Search"
+  },
+  {
+    "issueCode": "HD041",
+    "responseText": "The notification email could not be delivered. Please confirm that the email address is correct.",
+    "category": "Notification"
+  },
+  {
+    "issueCode": "HD042",
+    "responseText": "Push notifications are currently disabled for your account. You can enable them in your settings.",
+    "category": "Notification"
+  },
+  {
+    "issueCode": "HD043",
+    "responseText": "The verification email has been resent successfully. Please check your inbox and spam folder.",
+    "category": "Notification"
+  },
+  {
+    "issueCode": "HD044",
+    "responseText": "We could not send the requested message at this time. Please try again later.",
+    "category": "Notification"
+  },
+  {
+    "issueCode": "HD045",
+    "responseText": "Notification preferences were updated successfully. Changes may take a few minutes to apply.",
+    "category": "Notification"
+  },
+  {
+    "issueCode": "HD046",
+    "responseText": "Your profile information has been updated successfully.",
+    "category": "Profile"
+  },
+  {
+    "issueCode": "HD047",
+    "responseText": "We could not update your profile at this time. Please review your information and try again.",
+    "category": "Profile"
+  },
+  {
+    "issueCode": "HD048",
+    "responseText": "The selected profile image is not supported. Please upload a JPG or PNG image.",
+    "category": "Profile"
+  },
+  {
+    "issueCode": "HD049",
+    "responseText": "Your username is already taken. Please choose a different username.",
+    "category": "Profile"
+  },
+  {
+    "issueCode": "HD050",
+    "responseText": "Your password was changed successfully. Please use your new password the next time you sign in.",
+    "category": "Profile"
+  }
+]

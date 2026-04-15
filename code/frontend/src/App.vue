@@ -1,52 +1,42 @@
 <template>
   <div id="app">
-    <div class="ui inverted segment navbar">
-      <div class="ui center aligned container">
-        <div class="ui large secondary inverted pointing menu compact">
-          <router-link to="/entries" exact class="item">
-            <i class="list icon"></i> Entries
-          </router-link>
-          <router-link to="/entries/new" class="item">
-            <i class="plus circle icon"></i> New
-          </router-link>
-          <router-link to="/test" class="item">
-            <i class="graduation cap icon"></i> Test
-          </router-link>
-        </div>
-      </div>
-    </div>
-
-    <div class="ui text container">
-      <div class="ui one column grid">
-        <div class="column">
-          <router-view />
-        </div>
-      </div>
-    </div>
+    <NavBar v-if="$route.name !== 'welcome'" />
+    <router-view />
   </div>
 </template>
 
 <script>
+import NavBar from '@/components/NavBar.vue'
 export default {
-  name: 'app'
+  components: { NavBar }
 }
 </script>
 
 <style>
-#app > div.navbar {
-  margin-bottom: 1.5em;
+:root {
+  --baymax-red:       #DB2828;
+  --baymax-red-light: #f9e8e8;
+  --baymax-white:     #ffffff;
+  --baymax-gray:      #f5f5f5;
+  --baymax-text:      #2d2d2d;
 }
-input {
-  width: 300px;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--baymax-white) !important;
+  color: var(--baymax-text);
 }
-div.label {
-  width: 120px;
+
+.page-content {
+  padding: 2em;
+  min-height: calc(100vh - 58px);
+  background: #f7f3f3;
 }
-div.input {
-  margin-bottom: 10px;
-}
-button.ui.button {
-  margin-top: 15px;
-  display: block;
-}
+
+::-webkit-scrollbar       { width: 6px; }
+::-webkit-scrollbar-thumb { background: #DB2828; border-radius: 3px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
 </style>
