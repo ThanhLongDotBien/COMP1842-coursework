@@ -56,7 +56,7 @@ exports.updateEntry = async (req, res) => {
     const entry = await Entry.findById(req.params.id)
     if (!entry) return res.status(404).json({ success: false, message: 'Entry not found' })
 
-    // Kiểm tra trùng issueCode với entry khác
+    // Check for duplicate issueCode in other entries
     const duplicate = await Entry.findOne({ issueCode, _id: { $ne: req.params.id } })
     if (duplicate) {
       return res.status(400).json({ success: false, message: `Issue code "${issueCode}" already exists` })
